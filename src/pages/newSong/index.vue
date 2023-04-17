@@ -98,7 +98,7 @@ const tabData = [{
 onLoad(async () => {
   if (playListStore.playing.length > 0) playbarHeight.value = 40
   uni.createSelectorQuery().in(getCurrentInstance()).select(".newSong--header").boundingClientRect().exec((data) => {
-    listHeight.value = pageHeight.value - data[0].height - playbarHeight.value
+    listHeight.value = pageHeight.value - data[0].height
   })
   uni.$once("transNewSongListData", data => {
     newSongData.value[currTabIdx.value].push(...data)
