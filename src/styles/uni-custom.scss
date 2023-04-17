@@ -1,0 +1,23 @@
+/*
+  修改shadow-root下的样式
+*/
+.content {
+  .ball .ballList-item ::v-deep .u-icon__img {
+    width: 36px !important;
+    height: 36px !important;
+    filter: invert(42%) sepia(78%) saturate(6997%) hue-rotate(330deg)
+      brightness(103%) contrast(103%);
+  }
+  .recommend .recommend-item--name ::v-deep .u-text {
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+}
+
+.toast {
+  u-overlay ::v-deep .u-toast__content {
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "easycom": {
+    "custom": {
+      "^u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/homePage/index",
+      "style": {
+        "navigationBarTitleText": "网易云音乐"
+      }
+    },
+    {
+      "path": "pages/search/index",
+      "style": {
+        "navigationBarTitleText": "搜索"
+      }
+    },
+    {
+      "path": "pages/searchResult/index",
+      "style": {
+        "navigationBarTitleText": "搜索"
+      }
+    },
+    {
+      "path": "pages/playAudio/index",
+      "style": {
+        "navigationBarTitleText": "播放"
+      }
+    },
+    {
+      "path": "pages/playList/index",
+      "style": {
+        "navigationBarTitleText": "歌单"
+      }
+    },
+    {
+      "path": "pages/newSong/index",
+      "style": {
+        "navigationBarTitleText": "新歌"
+      }
+    },
+    {
+      "path": "pages/topList/index",
+      "style": {
+        "navigationBarTitleText": "排行榜"
+      }
+    },
+    {
+      "path": "pages/playListDetail/index",
+      "style": {
+        "navigationBarTitleText": "歌单详情"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}

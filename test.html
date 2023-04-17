@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>歌词逐字染色效果</title>
+  <style>
+    #lyrics span {
+      color: #ccc;
+    }
+
+    #lyrics span.active {
+      color: #fff;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="lyrics">
+    <p><span data-time="0.00">青春无悔</span><span data-time="0.50">不忘初心</span><span data-time="1.00">砥砺前行</span></p>
+    <p><span data-time="2.00">梦想成真</span><span data-time="2.50">勇攀高峰</span><span data-time="3.00">不断超越</span></p>
+  </div>
+  <script>
+    var lyrics = document.getElementById('lyrics');
+    var words = lyrics.querySelectorAll('span');
+    var currentTime = 0;
+    var duration = 4.00;
+    setInterval(function() {
+      currentTime += 0.1;
+      for (var i = 0; i < words.length; i++) {
+        var word = words[i];
+        var time = parseFloat(word.getAttribute('data-time'));
+        if (time <= currentTime) {
+          word.classList.add('active');
+        }
+      }
+    }, 100);
+  </script>
+</body>
+
+</html>
